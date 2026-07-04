@@ -84,7 +84,7 @@ WHERE salary > 50000;
 
 ### Output
 
-![Q1](output/sql q1.png)
+![Q1](output/sql_q1.png)
 
 ---
 
@@ -100,7 +100,7 @@ WHERE ename LIKE 'J%';
 
 ### Output
 
-![Q2](output/sql q2.png)
+![Q2](output/sql_q2.png)
 
 ---
 
@@ -116,7 +116,7 @@ WHERE city IN ('New York','Chicago');
 
 ### Output
 
-![Q3](output/sql q3.png)
+![Q3](output/sql_q3.png)
 
 ---
 
@@ -132,7 +132,7 @@ ORDER BY salary DESC;
 
 ### Output
 
-![Q4](output/sql q4.png)
+![Q4](output/sql_q4.png)
 
 ---
 
@@ -148,7 +148,7 @@ FROM Employee;
 
 ### Output
 
-![Q5](output/sql q5.png)
+![Q5](output/sql_q5.png)
 
 ---
 
@@ -166,7 +166,7 @@ GROUP BY gender;
 
 ### Output
 
-![Q6](output/sql q6.png)
+![Q6](output/sql_q6.png)
 
 ---
 
@@ -183,7 +183,7 @@ FROM Employee;
 
 ### Output
 
-![Q7](output/sql q7.png)
+![Q7](output/sql_q7.png)
 
 ---
 
@@ -203,7 +203,7 @@ ON e.empid = ed.empid;
 
 ### Output
 
-![Q8](output/sql q8.png)
+![Q8](output/sql_q8.png)
 
 ---
 
@@ -223,7 +223,7 @@ WHERE ed.projects = 'P1';
 
 ### Output
 
-![Q9](output/sql q9.png)
+![Q9](output/sql_q9.png)
 
 ---
 
@@ -243,7 +243,7 @@ WHERE ed.doj > '2022-02-01';
 
 ### Output
 
-![Q10](output/sql q10.png)
+![Q10](output/sql_q10.png)
 
 ---
 
@@ -267,19 +267,11 @@ WHERE salary = (
 
 ### Output
 
-![Q11](output/sql q11.png)
+![Q11](output/sql_q11.png)
 
 ---
 
 # Q12. Find employees whose salary is higher than the average salary
-
-### Step 1: Find Average Salary
-
-```sql
-SELECT
-AVG(salary) AS average_salary
-FROM Employee;
-```
 
 ### Step 2: Find Employees
 
@@ -297,7 +289,7 @@ FROM Employee
 
 ### Output
 
-![Q12](output/sql q12.png)
+![Q12](output/sql_q12.png)
 
 ---
 
@@ -315,7 +307,7 @@ GROUP BY projects;
 
 ### Output
 
-![Q13](output/sql q13.png)
+![Q13](output/sql_q13.png)
 
 ---
 
@@ -346,7 +338,7 @@ ORDER BY ed.projects;
 
 ### Output
 
-![Q14](output/sql q14.png)
+![Q14](output/sql_q14.png)
 
 ---
 
