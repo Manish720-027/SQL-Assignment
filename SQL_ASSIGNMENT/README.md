@@ -20,7 +20,7 @@ The project demonstrates SQL concepts such as filtering, sorting, aggregate func
 ## Project Structure
 
 ```
-SQL-Employee-Database-Assignment
+SQL-Assignment
 │
 ├── database.sql
 ├── queries.sql
