@@ -1,8 +1,7 @@
 
 
 DROP TABLE IF EXISTS EmployeeDetails;
-DROP TABL
-E IF EXISTS Employee;
+DROP TABLE IF EXISTS Employee;
 --Employee table
 CREATE TABLE Employee
 (
