@@ -62,9 +62,9 @@ The project demonstrates SQL concepts such as filtering, sorting, aggregate func
 
 ```sql
 SELECT
-    ename,
-    salary,
-    city
+ename,
+salary,
+city
 FROM Employee
 WHERE salary > 50000;
 ```
@@ -240,15 +240,15 @@ WHERE ed.doj > '2022-02-01';
 
 ```sql
 SELECT
-    ename,
-    salary
+ename,
+salary
 FROM Employee
 WHERE salary = (
-    SELECT DISTINCT salary
-    FROM Employee
-    ORDER BY salary DESC
-    OFFSET 1
-    LIMIT 1
+SELECT DISTINCT salary
+FROM Employee
+ORDER BY salary DESC
+OFFSET 1
+LIMIT 1
 );
 ```
 
@@ -304,21 +304,21 @@ GROUP BY projects;
 
 ```sql
 SELECT
-    ed.projects,
-    e.ename,
-    e.salary
+ed.projects,
+e.ename,
+e.salary
 FROM Employee e
 JOIN EmployeeDetails ed
 ON e.empid = ed.empid
 WHERE (ed.projects, e.salary) IN
 (
-    SELECT
-        ed2.projects,
-        MAX(e2.salary)
-    FROM Employee e2
-    JOIN EmployeeDetails ed2
-    ON e2.empid = ed2.empid
-    GROUP BY ed2.projects
+SELECT
+ed2.projects,
+MAX(e2.salary)
+FROM Employee e2
+JOIN EmployeeDetails ed2
+ON e2.empid = ed2.empid
+GROUP BY ed2.projects
 )
 ORDER BY ed.projects;
 ```
