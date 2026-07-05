@@ -17,19 +17,6 @@ The project demonstrates SQL concepts such as filtering, sorting, aggregate func
 
 ---
 
-## Project Structure
-
-```
-SQL-Assignment
-│
-├── database.sql
-├── queries.sql
-├── README.md
-└── output
-```
-
----
-
 ## Database Tables
 
 ### Employee
